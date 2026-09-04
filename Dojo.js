@@ -41,10 +41,10 @@ console.log(listUsuariosMaioresIdade());
 // Parte 04 - Usuário com Maior Volume de Compras
 const listUsuarioMaiorVolumeCompra = () => {
   const volumeComprasUsuarios = usuarios.map((e) => {
-    return {nome: e.nome, volumeCompras: e.compras?.length}
+    return {nome: e.nome, totalCompras: e.compras.reduce((ac, vl) => ac + vl, 0)}
   })
 
-  return volumeComprasUsuarios.reduce((ec, vl) => vl.volumeCompras > ec.volumeCompras ? vl : ec) //Como isso aqui tá funcionando?
+  return volumeComprasUsuarios.reduce((ec, vl) => vl.totalCompras > ec.totalCompras ? vl : ec) 
   
 }
 
