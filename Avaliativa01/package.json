@@ -1,0 +1,19 @@
+{
+  "name": "avaliativa01",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Carlos Eduardo Gonçalves",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6",
+    "nodemon": "^3.1.14",
+    "sequelize": "^6.37.8"
+  }
+}
